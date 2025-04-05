@@ -5,32 +5,81 @@ public class StringArray
 
 	public static void main(String[] args)
 	{
-		String str = "nayan";
-		String orgstr = str;
+		String str = "how are you";
+		String arr[] = str.split(" ");
 
-		int left = 0;
-		int right = str.length() - 1;
-		char ch[] = str.toCharArray();
-
-		while (left < right)
+		for (int i = 0; i < arr.length; i++)
 		{
-			char temp = ch[left];
-			ch[left] = ch[right];
-			ch[right] = temp;
-			left++;
-			right--;
+			String nstr = arr[i];
+			char nch[] = nstr.toCharArray();
+
+			int left = 0;
+			int right = nch.length - 1;
+
+			while (left < right)
+			{
+				char temp = nch[left];
+				nch[left] = nch[right];
+				nch[right] = temp;
+
+				left++;
+				right--;
+			}
+			System.out.print(new String(nch) + " ");
+
 		}
 
-		String newstr = new String(ch);
+//		String str = "I am vaibhav";
+//		String arr[] = str.split(" ");
+//
+//		int left = 0;
+//		int right = arr.length - 1;
+//
+//		while (left < right)
+//		{
+//			String temp = arr[left];
+//			arr[left] = arr[right];
+//			arr[right] = temp;
+//
+//			left++;
+//			right--;
+//		}
+//
+//		for (int i = 0; i < arr.length; i++)
+//		{
+//			System.out.print(arr[i] + " ");
+//		}
 
-		if (orgstr.equals(newstr))
-		{
-			System.out.println("palin");
-		}
-		else
-		{
-			System.out.println("not palin");
-		}
+//		String arr[] =
+//		{ "abc", "cde", "efg" };
+//		System.out.println(arr);
+
+//		String str = "nayan";
+//		String orgstr = str;
+//
+//		int left = 0;
+//		int right = str.length() - 1;
+//		char ch[] = str.toCharArray();
+//
+//		while (left < right)
+//		{
+//			char temp = ch[left];
+//			ch[left] = ch[right];
+//			ch[right] = temp;
+//			left++;
+//			right--;
+//		}
+//
+//		String newstr = new String(ch);
+//
+//		if (orgstr.equals(newstr))
+//		{
+//			System.out.println("palin");
+//		}
+//		else
+//		{
+//			System.out.println("not palin");
+//		}
 
 //		String str = "vaibhavchavan";
 //		char arr[] = str.toCharArray();
