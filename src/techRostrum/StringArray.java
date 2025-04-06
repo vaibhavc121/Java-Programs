@@ -5,29 +5,56 @@ public class StringArray
 
 	public static void main(String[] args)
 	{
-		String str = "how are you";
-		String arr[] = str.split(" ");
+		int[] arr =
+		{ 4, 1, 3, 2, 5 };
 
-		for (int i = 0; i < arr.length; i++)
+		for (int i = 0; i < arr.length - 1; i++)
 		{
-			String nstr = arr[i];
-			char nch[] = nstr.toCharArray();
-
-			int left = 0;
-			int right = nch.length - 1;
-
-			while (left < right)
+			for (int j = i + 1; j < arr.length; j++)
 			{
-				char temp = nch[left];
-				nch[left] = nch[right];
-				nch[right] = temp;
-
-				left++;
-				right--;
+				if (arr[i])
+					;
 			}
-			System.out.print(new String(nch) + " ");
-
 		}
+
+//		int[] arr =
+//		{ 4, 1, 3, 2, 5 };
+//
+//		int temp = arr[0];
+//
+//		for (int i = 1; i < arr.length; i++)
+//		{
+//			if (temp < arr[i])
+//			{
+//				temp = arr[i];
+//			}
+//		}
+
+		System.out.println("smallet no is: " + temp);
+
+//		String str = "how are you";
+//		String arr[] = str.split(" ");
+//
+//		for (int i = 0; i < arr.length; i++)
+//		{
+//			String nstr = arr[i];
+//			char nch[] = nstr.toCharArray();
+//
+//			int left = 0;
+//			int right = nch.length - 1;
+//
+//			while (left < right)
+//			{
+//				char temp = nch[left];
+//				nch[left] = nch[right];
+//				nch[right] = temp;
+//
+//				left++;
+//				right--;
+//			}
+//			System.out.print(new String(nch) + " ");
+//
+//		}
 
 //		String str = "I am vaibhav";
 //		String arr[] = str.split(" ");
