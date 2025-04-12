@@ -1,17 +1,34 @@
 package techRostrum;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class StringArray
 {
 
 	public static void main(String[] args)
 	{
-		Map<String, Integer> hm = new HashMap<String, Integer>();
-		hm.put("vaibhav", 1);
-		System.out.println(hm);
-		System.out.println(hm.get("vaibhav"));
+
+		String str = "I am vaibhav and vaibhav and";
+
+		String[] arr = str.split(" ");
+
+		for (int i = 0; i < arr.length - 1; i++)
+		{
+			for (int j = i + 1; j < arr.length; j++)
+			{
+				if (arr[i].equals(arr[j]))
+				{
+
+				}
+				else
+				{
+					System.out.println(arr[i]);
+				}
+			}
+		}
+
+//		Map<String, Integer> hm = new HashMap<String, Integer>();
+//		hm.put("vaibhav", 1);
+//		System.out.println(hm);
+//		System.out.println(hm.get("vaibhav"));
 		// System.out.println(hm.);
 
 //		int[] arr =
