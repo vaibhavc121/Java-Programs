@@ -6,24 +6,125 @@ public class StringArray
 	public static void main(String[] args)
 	{
 
-		String str = "I am vaibhav and vaibhav and";
+		int[] arr =
+		{ 5, 2, 3, 4 };
 
-		String[] arr = str.split(" ");
+		int smallest = arr[0];
 
-		for (int i = 0; i < arr.length - 1; i++)
+		for (int i = 1; i < arr.length; i++)
 		{
-			for (int j = i + 1; j < arr.length; j++)
+			if (smallest < arr[i])
 			{
-				if (arr[i].equals(arr[j]))
-				{
-
-				}
-				else
-				{
-					System.out.println(arr[i]);
-				}
+				smallest = arr[i];
 			}
 		}
+		System.out.println(smallest);
+
+//		String[] arr =
+//		{ "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" };
+//
+//		for (int i = 0; i < arr.length; i++)
+//		{
+//			// System.out.print(arr[i].replaceAll("day", "") + " ");
+//			System.out.print(arr[i].substring(0, 3) + " ");
+//		}
+
+//		for (int i = 1; i <= 5; i++)
+//		{
+//			for (int j = 1; j <= (2 * i - 1); j++)
+//			{
+//
+//				System.out.print("*" + " ");
+//			}
+//			System.out.println();
+//		}
+
+//		for (int i = 1; i <= 10; i = i + 2)
+//		{
+//			System.out.println(i);
+//		}
+
+//		int num = 5;
+//		int fact = 1;
+//
+//		for (int i = 1; i <= num; i++)
+//		{
+//			fact = fact * i;
+//		}
+//		System.out.println(fact);
+
+//		for (int i = 2; i <= 10; i = i + 2)
+//		{
+//			System.out.println(i);
+//		}
+//		int f1 = 0;
+//		int f2 = 1;
+//		int f3;
+//
+//		System.out.print(f1 + " " + f2 + " ");
+//		for (int i = 1; i <= 10; i++)
+//		{
+//			f3 = f1 + f2;
+//			System.out.print(f3 + " ");
+//			f1 = f2;
+//			f2 = f3;
+//		}
+
+//		int num = 1234;
+//
+//		// int result = 1234 % 10;
+//		int rev = 0;
+//		while (num > 0)
+//		{
+//			int rem = num % 10;
+//			rev = (rev * 10) + rem;
+//			num = num / 10;
+//
+//		}
+//
+//		System.out.println(rev);
+//		int[] arr =
+//		{ 1, 2, 3, 4, 5 };
+//		for (int i = arr.length - 1; i >= 0; i--)
+//		{
+//			System.out.print(arr[i] + " ");
+//		}
+
+//		int start = 0;
+//		int end = arr.length - 1;
+//
+//		while (start < end)
+//		{
+//			int temp = arr[start];
+//			arr[start] = arr[end];
+//			arr[end] = temp;
+//			start++;
+//			end--;
+//		}
+//
+//		for (int i = 0; i < arr.length; i++)
+//		{
+//			System.out.print(arr[i] + " ");
+//		}
+
+//		String str = "I am vaibhav and vaibhav and";
+//
+//		String[] arr = str.split(" ");
+//
+//		for (int i = 0; i < arr.length - 1; i++)
+//		{
+//			for (int j = i + 1; j < arr.length; j++)
+//			{
+//				if (arr[i].equals(arr[j]))
+//				{
+//
+//				}
+//				else
+//				{
+//					System.out.println(arr[i]);
+//				}
+//			}
+//		}
 
 //		Map<String, Integer> hm = new HashMap<String, Integer>();
 //		hm.put("vaibhav", 1);
