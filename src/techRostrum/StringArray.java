@@ -5,20 +5,27 @@ public class StringArray
 
 	public static void main(String[] args)
 	{
-
-		int[] arr =
-		{ 5, 2, 3, 4 };
-
-		int smallest = arr[0];
-
-		for (int i = 1; i < arr.length; i++)
+		String str = "vaibhav";
+		char[] arr = str.toCharArray();
+		System.out.println(arr);
+		System.out.println(arr[0]);
+		for (int i = 0; i < arr.length; i++)
 		{
-			if (smallest < arr[i])
-			{
-				smallest = arr[i];
-			}
+			System.out.println(arr[i]);
 		}
-		System.out.println(smallest);
+//		int[] arr =
+//		{ 5, 2, 3, 4 };
+//
+//		int smallest = arr[0];
+//
+//		for (int i = 1; i < arr.length; i++)
+//		{
+//			if (smallest < arr[i])
+//			{
+//				smallest = arr[i];
+//			}
+//		}
+//		System.out.println(smallest);
 
 //		String[] arr =
 //		{ "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" };
