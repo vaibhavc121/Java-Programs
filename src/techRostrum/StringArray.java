@@ -1,19 +1,22 @@
 package techRostrum;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class StringArray
 {
 
 	public static void main(String[] args)
 	{
-		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
-		hm.put(1, 121);
-		hm.put(2, 122);
+		HashMap hm = new HashMap();
+		hm.put(1, "vaibhav");
+		System.out.println(hm.get(1));
 
-		System.out.println(hm.entrySet());
-		System.out.println(hm.get("vaibhav"));
+//		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
+//		hm.put(1, 121);
+//		hm.put(2, 122);
+//
+//		System.out.println(hm.entrySet());
+//		System.out.println(hm.get);
 
 //		String str = "vaibhav";
 //		char[] arr = str.toCharArray();
