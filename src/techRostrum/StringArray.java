@@ -1,15 +1,16 @@
 package techRostrum;
 
-import java.util.HashMap;
-
 public class StringArray
 {
 
 	public static void main(String[] args)
 	{
-		HashMap hm = new HashMap();
-		hm.put(1, "vaibhav");
-		System.out.println(hm.get(1));
+//		HashMap<K, V> hm=new HashMap<K, V>();
+//		hm.put
+
+//		HashMap hm = new HashMap();
+//		hm.put(1, "vaibhav");
+//		System.out.println(hm.get(1));
 
 //		Map<Integer, Integer> hm = new HashMap<Integer, Integer>();
 //		hm.put(1, 121);
