@@ -5,8 +5,8 @@ public class StringArray
 
 	public static void main(String[] args)
 	{
-//		HashMap<K, V> hm=new HashMap<K, V>();
-//		hm.put
+		HashMap<K, V> hm=new HashMap<K, V>();
+		hm.put
 
 //		HashMap hm = new HashMap();
 //		hm.put(1, "vaibhav");
