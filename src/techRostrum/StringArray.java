@@ -1,13 +1,19 @@
 package techRostrum;
 
+import java.util.Arrays;
+
 public class StringArray
 {
 
 	public static void main(String[] args)
 	{
+		char[] arr = { 'a', 'b', 'c', 'd' };
+		// System.out.println(arr[0]);
+
+		System.out.println(Arrays.toString(arr));
 
 //		int a=10, b=10;
-//		System.out.println(a+b);		
+//		System.out.println(a+b);
 
 //		HashMap<K, V> hm=new HashMap<K, V>();
 //		hm.put
