@@ -8,22 +8,19 @@ public class ReverseEachWord
 		String str = "how are you";
 		String[] arr = str.split(" ");
 
-		char rev='';
-
 		for (String word : arr)
 		{
-			int i = word.length();
-
+			String rev = "";
+			int i = word.length() - 1;
 			while (i >= 0)
 			{
-				char ch = word.charAt(i - 1);
-
-				rev=rev+ch;
+				char ch = word.charAt(i);
+				rev = rev + ch;
 				i--;
-
 			}
 
-			System.out.println(rev);
+			System.out.print(rev + " ");
+
 		}
 	}
 
