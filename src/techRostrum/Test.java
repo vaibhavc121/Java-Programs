@@ -5,12 +5,23 @@ public class Test
 
 	public static void main(String[] args)
 	{
-		// test
-	}
+		String str = "vaibhav";
+		char[] ch = str.toCharArray();
 
-	public void m1()
-	{
+		int i = 0;
+		int j = ch.length - 1;
 
+		while (i < j)
+		{
+			char temp = ch[i];
+			ch[i] = ch[j];
+			ch[j] = temp;
+
+			i++;
+			j--;
+		}
+
+		System.out.println(ch);
 	}
 
 }
