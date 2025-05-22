@@ -10,24 +10,24 @@ public class Test
 	public static void main(String[] args)
 	{
 
-		String str = "vaibhav";
-
-		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
-
-		char[] ch = str.toCharArray();
-
-		for (int i = 0; i < ch.length; i++)
-		{
-			map.put(ch[i], map.getOrDefault(ch[i], 0) + 1);
-		}
-
-		for (Map.Entry<Character, Integer> entry : map.entrySet())
-		{
-			if (entry.getValue() > 1)
-			{
-				System.out.println("duplicate char is: " + entry.getKey() + ":" + entry.getValue());
-			}
-		}
+//		String str = "vaibhav";
+//
+//		HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+//
+//		char[] ch = str.toCharArray();
+//
+//		for (int i = 0; i < ch.length; i++)
+//		{
+//			map.put(ch[i], map.getOrDefault(ch[i], 0) + 1);
+//		}
+//
+//		for (Map.Entry<Character, Integer> entry : map.entrySet())
+//		{
+//			if (entry.getValue() > 1)
+//			{
+//				System.out.println("duplicate char is: " + entry.getKey() + ":" + entry.getValue());
+//			}
+//		}
 
 //		String str = "i am learning learning java java java programming";
 //		HashMap<String, Integer> map = new HashMap<String, Integer>();
